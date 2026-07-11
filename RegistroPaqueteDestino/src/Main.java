@@ -18,8 +18,8 @@ public class Main extends Application {
 
         stage.setTitle("Sistema de Registro de Paquetes y Destinos");
         stage.setScene(scene);
-        stage.setWidth(600);
-        stage.setHeight(600);
+        stage.setWidth(500);
+        stage.setHeight(500);
         stage.show();
     }
 }

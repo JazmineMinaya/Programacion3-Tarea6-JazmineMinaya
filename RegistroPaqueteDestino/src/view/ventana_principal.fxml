@@ -45,7 +45,7 @@
                 style="-fx-font-size: 20px;"/>
             <Label
                 text="Elija la opción de su preferencia..."
-                style="-fx-font-size: 15px"/>
+                style="-fx-font-size: 13px"/>
         </VBox>
     </center>
 
