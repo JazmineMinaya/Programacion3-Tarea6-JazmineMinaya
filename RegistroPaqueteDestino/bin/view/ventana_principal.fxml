@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.VentanaPrincipalController">
+    <top>
+        <MenuBar>
+            <Menu text="Archivo">
+                <MenuItem
+                    text="Registro de Paquetes"
+                    onAction="#abrirRegistroPaquete"/>
+                <MenuItem
+                    text="Registro de Destinos"
+                    onAction="#abrirRegistroDestino"/>
+                <MenuItem
+                    text="Consulta de Paquetes"
+                    onAction="#abrirConsultaPaquete"/>
+                <MenuItem
+                    text="Consulta de Destinos"
+                    onAction="#abrirConsultaDestino"/>
+                <MenuItem
+                    text="Salir"
+                    onAction="#salir"/>
+            </Menu>
+
+            <Menu text="Procesos">
+                <items>
+                    <MenuItem
+                        text="Guardar con Hilo"
+                        onAction="#guardarConHilo"/>
+                    <MenuItem
+                        text="Thread Vs Platform.runLater"
+                        onAction="#demostrarHilo"/>
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Label
+                text="Sistema de Registro de Paquetes y Destinos"
+                style="-fx-font-size: 20px;"/>
+            <Label
+                text="Elija la opción de su preferencia..."
+                style="-fx-font-size: 15px"/>
+        </VBox>
+    </center>
+
+</BorderPane>
