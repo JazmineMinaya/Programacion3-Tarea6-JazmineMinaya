@@ -38,6 +38,31 @@ public class ArchivoUtil {
         }
     }
 
+    public static ArrayList<Destino> leerListaDestinos() {
+        ArrayList<Destino> destinos = new ArrayList<>();
+
+        try {
+            FileReader archivo = new FileReader("Destinos.txt");
+            BufferedReader lector = new BufferedReader(archivo);
+
+            String linea;
+
+            while((linea = lector.readLine()) != null) {
+                Destino destino = new Destino(linea);
+
+                destinos.add(destino);
+            }
+
+            lector.close();
+            archivo.close();
+
+        } catch (IOException e) {
+            System.out.println("No se pudo leer el archivo: " + e.getMessage());
+        }
+
+        return destinos;
+    }
+
     public static ArrayList<Paquete> leerListaPaquetes() {
         ArrayList<Paquete> paquetes = new ArrayList<>();
 
