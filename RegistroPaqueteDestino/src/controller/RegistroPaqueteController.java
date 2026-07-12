@@ -12,6 +12,7 @@ import javafx.scene.control.ProgressBar;
 import model.Destino;
 import model.Paquete;
 import utils.ArchivoUtil;
+import utils.Navegacion;
 
 public class RegistroPaqueteController {
     @FXML
@@ -39,7 +40,10 @@ public class RegistroPaqueteController {
 
     @FXML
     public void abrirRegistroDestino(){
-
+        RegistroDestinoController controller = Navegacion.abrirVentana(
+            "/view/registro_destino.fxml", 
+            "Registro de Destinos"
+        );
     }
 
     @FXML

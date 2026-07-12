@@ -11,15 +11,15 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader (
-            getClass().getResource("/view/registro_paquete.fxml") //ventana_principal
+            getClass().getResource("/view/registro_paquete.fxml")
         );
 
         Scene scene = new Scene(loader.load());
 
         stage.setTitle("Sistema de Registro de Paquetes y Destinos");
         stage.setScene(scene);
-        stage.setWidth(500); //500
-        stage.setHeight(400); //500
+        stage.setWidth(500);
+        stage.setHeight(400);
         stage.show();
     }
 }
