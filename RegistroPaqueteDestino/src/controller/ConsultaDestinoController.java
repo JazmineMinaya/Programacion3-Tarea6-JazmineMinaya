@@ -40,9 +40,9 @@ public class ConsultaDestinoController {
         tablaDestinos.setItems(lista);
 
         if (lista.isEmpty()) {
-            lblMensaje.setText("No hay paquetes registrados en el archivo");
+            lblMensaje.setText("No hay destinos registrados en el archivo");
         } else {
-            lblMensaje.setText("Paquetes cargados exitosamente");
+            lblMensaje.setText("Destinos cargados exitosamente");
         }
     }
 }

@@ -92,8 +92,15 @@ public class RegistroPaqueteController {
             } catch (Exception e) {
                 System.out.println("Error al guardar el paquete: " + e.getMessage());
             } finally {
-                progressBar.setProgress(0);
-                lblMensaje.setText("Paquete guardado en el archivo");
+                Platform.runLater(() -> {
+                    progressBar.setProgress(0);
+                    lblMensaje.setText("Paquete guardado en el archivo");
+
+                    txtCodigo.clear();
+                    txtDestinatario.clear();
+                    txtPeso.clear();
+                    cmbDestino.setValue(null);
+                });
             }
         });
 
@@ -126,8 +133,15 @@ public class RegistroPaqueteController {
             } catch (Exception e) {
                 System.out.println("Error al crear el hilo: " + e.getMessage());
             } finally {
-                progressBar.setProgress(0);
-                lblMensaje.setText("Demostración finalizada");
+                Platform.runLater(() -> {
+                    progressBar.setProgress(0);
+                    lblMensaje.setText("Demostración finalizada");
+
+                    txtCodigo.clear();
+                    txtDestinatario.clear();
+                    txtPeso.clear();
+                    cmbDestino.setValue(null);
+                });
             }
         });
 
@@ -147,7 +161,7 @@ public class RegistroPaqueteController {
     public void guardarPaquete() {
         if (txtCodigo.getText().trim().isEmpty() || txtDestinatario.getText().trim().isEmpty() ||
             txtPeso.getText().trim().isEmpty()) {
-                lblMensaje.setText("Campo vacío. Favor todos los campos");
+                lblMensaje.setText("Campo vacío. Favor de llenar todos los campos");
                 return;
             }
 

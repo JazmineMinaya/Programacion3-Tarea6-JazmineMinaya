@@ -13,7 +13,7 @@ public class ArchivoUtil {
     
     public static void guardarDestino(Destino destino) {
         try {
-            FileWriter archivo = new FileWriter("Destinos.txt", true);
+            FileWriter archivo = new FileWriter("destinos.txt", true);
             archivo.write(destino.getNombre() + "\n");
             archivo.close();
             System.out.println("Destino guardado en el archivo");
@@ -25,7 +25,7 @@ public class ArchivoUtil {
 
     public static void guardarPaquete(Paquete paquete) {
         try {
-            FileWriter archivo = new FileWriter("Paquetes.txt", true);
+            FileWriter archivo = new FileWriter("paquetes.txt", true);
             archivo.write(paquete.getCodigo() + ";" +
                           paquete.getDestinatario() + ";" +
                           paquete.getPeso() + ";" +
@@ -42,7 +42,7 @@ public class ArchivoUtil {
         ArrayList<Destino> destinos = new ArrayList<>();
 
         try {
-            FileReader archivo = new FileReader("Destinos.txt");
+            FileReader archivo = new FileReader("destinos.txt");
             BufferedReader lector = new BufferedReader(archivo);
 
             String linea;
@@ -67,7 +67,7 @@ public class ArchivoUtil {
         ArrayList<Paquete> paquetes = new ArrayList<>();
 
         try {
-            FileReader archivo = new FileReader("Paquetes.txt");
+            FileReader archivo = new FileReader("paquetes.txt");
             BufferedReader lector = new BufferedReader(archivo);
 
             String linea;
