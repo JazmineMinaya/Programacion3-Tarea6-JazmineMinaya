@@ -1,1 +1,2 @@
 101;Jazmine;33.33;Santo Domingo
+102;Melody Santos;24.55;Santiago
