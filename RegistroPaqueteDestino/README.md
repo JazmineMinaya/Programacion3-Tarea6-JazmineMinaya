@@ -1,18 +1,22 @@
-## Getting Started
+# Programacion3-Tarea5-JazmineMinaya
+Tarea 6 - Sistema de Registro de Paquetes y Destinos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Nombre del Proyecto
+Tarea 6
 
-## Folder Structure
+## Estudiante
+Jazmine Arleny Minaya Peralta
 
-The workspace contains two folders by default, where:
+## Matrícula
+1000-6143
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Materia
+Programación 3
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Descripción
+Este programa en Java integra una aplicación desarrollada en JavaFX y FXML para registrar y consultar paquetes y destinos mediante una interfaz gráfica.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Tecnologías utilizadas
+- Java
+- JDK 25
+- Visual Studio Code
