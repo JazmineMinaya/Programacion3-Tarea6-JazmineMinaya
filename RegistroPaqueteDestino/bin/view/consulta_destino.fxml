@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.ConsultaDestinoController"
+      spacing="10"
+      alignment="CENTER"
+      prefWidth="300"
+      prefHeight="350">
+
+    <Label
+        text="Consulta de Destinos"
+        style="-fx-font-size: 15px"/>
+
+    <TableView
+        fx:id="tablaDestinos"
+        prefWidth="270" 
+        maxWidth="270" 
+        prefHeight="200">
+
+        <columnResizePolicy>
+            <TableView 
+                fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+
+        <columns>
+            <TableColumn
+                fx:id="colDestino"
+                text="Destino"/>
+        </columns>
+    </TableView>
+
+    <Button
+        text="Cargar"
+        onAction="#cargarArchivo"/>
+    
+    <Label
+        fx:id="lblMensaje"
+        text="Esperando acción..."/>
+</VBox>

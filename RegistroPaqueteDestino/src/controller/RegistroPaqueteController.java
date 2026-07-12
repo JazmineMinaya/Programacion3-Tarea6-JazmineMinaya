@@ -56,7 +56,10 @@ public class RegistroPaqueteController {
 
     @FXML
     public void abrirConsultaDestino(){
-
+        ConsultaDestinoController controller = Navegacion.abrirVentana(
+            "/view/consulta_destino.fxml", 
+            "Consulta de Destinos"
+        );
     }
 
     @FXML
