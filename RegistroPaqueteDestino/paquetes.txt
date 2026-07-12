@@ -1,2 +1,0 @@
-101;Jazmine;33.33;Santo Domingo
-102;Arleny;44.99;Santo Domingo
