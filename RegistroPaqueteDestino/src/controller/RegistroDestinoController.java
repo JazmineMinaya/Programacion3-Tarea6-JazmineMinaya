@@ -56,12 +56,6 @@ public class RegistroDestinoController {
     }
 
     private Destino crearDestino() {
-        String destino = txtNombreDestino.getText();
-
-        if (destino == null) {
-            destino = "Sin destino";
-        }
-
-        return new Destino(destino);
+        return new Destino(txtNombreDestino.getText());
     }
 }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.RegistroPaqueteController">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Archivo">
+                    <MenuItem
+                        text="Registro de Paquetes"
+                        onAction="#abrirRegistroPaquete"/>
+                    <MenuItem
+                        text="Registro de Destinos"
+                        onAction="#abrirRegistroDestino"/>
+                    <MenuItem
+                        text="Consulta de Paquetes"
+                        onAction="#abrirConsultaPaquete"/>
+                    <MenuItem
+                        text="Consulta de Destinos"
+                        onAction="#abrirConsultaDestino"/>
+                    <MenuItem
+                        text="Salir"
+                        onAction="#salir"/>
+                </Menu>
+
+                <Menu text="Procesos">
+                    <items>
+                        <MenuItem
+                            text="Guardar con Hilo"
+                            onAction="#guardarConHilo"/>
+                        <MenuItem
+                            text="Thread Vs Platform.runLater"
+                            onAction="#demostrarHilo"/>
+                    </items>
+                </Menu>
+            </MenuBar>
+
+            <VBox spacing="30" alignment="CENTER">
+                <Label
+                    text="Sistema de Registro de Paquetes y Destinos"
+                    style="-fx-font-size: 20px;"/>
+            </VBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Label
+                text="Registro de Paquetes"
+                style="-fx-font-size: 15px"/>
+
+            <TextField
+                fx:id="txtCodigo"
+                promptText="Código"
+                maxWidth="350"/>
+            <TextField
+                fx:id="txtDestinatario"
+                promptText="Nombre del destinatario"
+                maxWidth="350"/>
+            <TextField
+                fx:id="txtPeso"
+                promptText="Peso"
+                maxWidth="350"/>
+
+            <ComboBox
+                fx:id="cmbDestino"
+                promptText="Destino"
+                maxWidth="300">
+            </ComboBox>
+
+            <HBox
+                spacing="10"
+                alignment="CENTER">
+
+                <Button
+                    text="Guardar"
+                    onAction="#guardarPaquete"/>
+                <Button
+                    text="Cargar"
+                    onAction="#cargarDestino"/>
+            </HBox>
+
+            <ProgressBar
+                fx:id="progressBar"
+                progress="0"
+                prefWidth="300">
+            </ProgressBar>
+
+            <Label
+                fx:id="lblMensaje"
+                text="Esperando acción..."/>
+        </VBox>
+    </center>
+
+</BorderPane>
