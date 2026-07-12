@@ -35,7 +35,7 @@ public class RegistroPaqueteController {
 
     @FXML
     public void abrirRegistroPaquete(){
-
+        lblMensaje.setText("Ya se encuentra en la ventana de Registro de Paquetes");
     }
 
     @FXML
