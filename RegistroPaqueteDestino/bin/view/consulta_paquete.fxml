@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.ConsultaPaqueteController"
+      spacing="10"
+      alignment="CENTER"
+      prefWidth="400"
+      prefHeight="430">
+
+    <Label
+        text="Consulta de Paquetes"
+        style="-fx-font-size: 15px"/>
+
+    <TableView
+        fx:id="tablaPaquetes"
+        prefWidth="325" 
+        maxWidth="325" 
+        prefHeight="320">
+
+        <columnResizePolicy>
+            <TableView 
+                fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+
+        <columns>
+            <TableColumn
+                fx:id="colCodigo"
+                text="Código"/>
+            <TableColumn
+                fx:id="colDestinatario"
+                text="Destinatario"/>
+            <TableColumn
+                fx:id="colPeso"
+                text="Peso"/>
+            <TableColumn
+                fx:id="colDestino"
+                text="Destino"/>
+        </columns>
+    </TableView>
+
+    <Button
+        text="Cargar"
+        onAction="#cargarArchivo"/>
+    
+    <Label
+        fx:id="lblMensaje"
+        text="Esperando acción..."/>
+</VBox>

@@ -48,7 +48,10 @@ public class RegistroPaqueteController {
 
     @FXML
     public void abrirConsultaPaquete(){
-
+        ConsultaPaqueteController controller = Navegacion.abrirVentana(
+            "/view/consulta_paquete.fxml", 
+            "Consulta de Paquetes"
+        );
     }
 
     @FXML
