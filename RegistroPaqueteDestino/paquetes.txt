@@ -1,2 +1,4 @@
 101;Jazmine;33.33;Santo Domingo
 102;Melody Santos;24.55;Santiago
+103;Arleny;66.5;Puerto Plata
+104;Liliana;39.99;Santiago
